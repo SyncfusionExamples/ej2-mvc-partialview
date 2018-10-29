@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="row" style="margin-top:100px;">
+    <ejs-button isPrimary=true id="but" onclick="clickAjax()"><e-content-template>Load PartialView</e-content-template></ejs-button>
+</div>
+
+<div class="row">
+    <div id="PartialView"></div>
+    </div>
+    <script>
+        function clickAjax() {
+            var ajax = new ej.base.Ajax('/PartialPage/index', 'GET', true);
+            ajax.send().then(function (result) {
+                document.getElementById('PartialView').innerHTML = result;
+                eval(document.getElementById('PartialView').querySelector('script').innerHTML);
+            });
+        }
+    </script>
