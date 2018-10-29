@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<p>Use this area to provide additional information.</p>
+
+<div>
+    <h3>Essential JS 2 Datepicker component</h3>
+    <ejs-datepicker id="datepicker" placeholder="Choose a Date"></ejs-datepicker>
+</div>
+<br />
+<div>
+    <h3>Essential JS 2 Timepicker component</h3>
+    <ejs-timepicker id="timepicker" placeholder="Select a time"></ejs-timepicker>
+</div>
+<br />
+<div>
+    <h3>Essential JS 2 Daterangepicker component</h3>
+    <ejs-daterangepicker id="daterangepicker" placeholder="Choose a Range"></ejs-daterangepicker>
+</div>
+<br />
+<div>
+    <h3>Essential JS 2 Dropdownlist component</h3>
+    <div>
+        <ejs-dropdownlist id="games" dataSource="@ViewBag.data" placeholder="Select a game" index="2" popupHeight="220px">
+            <e-dropdownlist-fields text="Game" value="Id"></e-dropdownlist-fields>
+        </ejs-dropdownlist>
+    </div>
+</div>
+<br />
+
+<ejs-scripts></ejs-scripts>
