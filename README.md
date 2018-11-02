@@ -1,5 +1,10 @@
-# ej2-mvc-partialview
-This is simple demo application to use the syncfusion ej2 component in partial view page, Need to do following steps to create a partial view.
+# Rendering Syncfusion ASP.Net Core UI Controls in MVC partial view page
+
+This is simple demo application to use the syncfusion  Syncfusion ASP.Net Core UI Controls in partial view page.
+
+# Solution
+
+Follow the below steps to render Syncfusion ASP.Net Core UI (Essential JS 2) control in a partial view.
 
 ## Create ASP.NET Core control using getting started
 
