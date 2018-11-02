@@ -1,11 +1,11 @@
 # ej2-mvc-partialview
 This is simple demo application to use the syncfusion ej2 component in partial view page, Need to do following steps to create a partial view.
 
-# Create ASP.NET Core control using getting started
+## Create ASP.NET Core control using getting started
 
 https://ej2.syncfusion.com/aspnetcore/documentation/button/getting-started.html
 
-# Created a partial view controls & Added the Syncfusion component to the partial view page
+## Created a partial view controls & Added the Syncfusion component to the partial view page
 
 ```html
 <p>Use this area to provide additional information. </p>
@@ -33,7 +33,7 @@ https://ej2.syncfusion.com/aspnetcore/documentation/button/getting-started.html
     </div></div>
 ```
 
-# Added view bag data to the partial view control 
+## Added view bag data to the partial view control 
 
 ```javascript
 namespace PartialView.Controllers
@@ -50,7 +50,7 @@ namespace PartialView.Controllers
 }
 ```
 
-# Create a div element for partial page controls
+## Create a div element for partial page controls
 
 ```html
 <div class="row">
@@ -58,7 +58,7 @@ namespace PartialView.Controllers
     </div>
 ```
 
-# Read partial view controls using Ajax:
+## Read partial view controls using Ajax:
 
 ```javascript
 function clickAjax() {
@@ -70,7 +70,7 @@ function clickAjax() {
 
 ```
 
-# Need to Evaluate scripts manually 
+## Need to Evaluate scripts manually 
 
 ```javascript
 function clickAjax() {
