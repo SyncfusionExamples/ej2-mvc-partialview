@@ -65,24 +65,14 @@ namespace PartialView.Controllers
 
 ## Read partial view controls using Ajax:
 
-```javascript
-function clickAjax() {
-        var ajax = new ej.base.Ajax('/PartialPage/index', 'GET', true);
-        ajax.send().then(function (result) {
-            document.getElementById('id').innerHTML = result;
-        });;
-    }
-
-```
-
-## Need to Evaluate scripts manually 
 
 ```javascript
 function clickAjax() {
         var ajax = new ej.base.Ajax('/PartialPage/index', 'GET', true);
         ajax.send().then(function (result) {
-            document.getElementById('id').innerHTML = result;
-            eval(document.getElementById('PartialView').querySelector('script').innerHTML);
+              var fragment = document.createElement('div');
+              fragment.innerHTML = result;
+              ej.base.append(fragment.children, document.getElementById('PartialView'), true);
         });;
     }
 
