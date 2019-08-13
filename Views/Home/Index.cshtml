@@ -12,9 +12,9 @@
     function clickAjax() {
         var ajax = new ej.base.Ajax('/PartialPage/index', 'GET', true);
         ajax.send().then(function (result) {
-            console.log(result);
-            document.getElementById('PartialView').innerHTML = result;
-                eval(document.getElementById('PartialView').querySelector('script').innerHTML);
+            var fragment = document.createElement('div');
+            fragment.innerHTML = result;
+            ej.base.append([fragment], document.getElementById('PartialView'),true);
            
         });
     }
