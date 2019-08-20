@@ -4,17 +4,18 @@
 <div class="row" style="margin-top:100px;">
     <ejs-button isPrimary=true id="but" onclick="clickAjax()"><e-content-template>Load PartialView</e-content-template></ejs-button>
 </div>
-
+<ejs-scripts></ejs-scripts>
 <div class="row">
     <div id="PartialView"></div>
-    </div>
-    <script>
-        function clickAjax() {
-            var ajax = new ej.base.Ajax('/PartialPage/index', 'GET', true);
-            ajax.send().then(function (result) {
-                var fragment = document.createElement('div');
-                fragment.innerHTML = result;
-                ej.base.append(fragment.children, document.getElementById('PartialView'), true);
-            });
-        }
-    </script>
+</div>
+<script>
+    function clickAjax() {
+        var ajax = new ej.base.Ajax('/PartialPage/index', 'GET', true);
+        ajax.send().then(function (result) {
+            var fragment = document.createElement('div');
+            fragment.innerHTML = result;
+            ej.base.append([fragment], document.getElementById('PartialView'),true);
+           
+        });
+    }
+</script>
